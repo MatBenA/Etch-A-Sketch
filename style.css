@@ -15,6 +15,9 @@ body {
     background-color: beige;
     border: 3px solid black;
     height: 500px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .cell{
