@@ -1,0 +1,25 @@
+body {
+    /*Overall font, no margin*/
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    background-color:khaki;
+}
+
+.container{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    background-color: beige;
+    border: 3px solid black;
+    height: 500px;
+}
+
+.cell{
+    width: 10px;
+    height: 10px;
+    background-color:aqua;
+    border: 2px solid black;
+}
