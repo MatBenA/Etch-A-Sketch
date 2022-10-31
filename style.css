@@ -21,7 +21,7 @@ body {
   height: 100%;
 
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
+  grid-template-columns: repeat(50, 1fr);
 }
 
 :after {
