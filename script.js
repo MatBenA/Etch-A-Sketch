@@ -11,17 +11,17 @@ for(i = 0; i < 256; i++){
     paint(i);
 }
 
+/* Checks if a mouse button is being pressed over the conteiner,
+   if thats true then execute the colorCell() function */
+function paint(cellNumber){
+    content.addEventListener("mousedown",() => colorCell(cellNumber));
+}
+
 /* Colors the cells when the mouse is over them*/
 function colorCell(cellNumber){
     cells[cellNumber].addEventListener("mouseover", () =>{
         cells[cellNumber].style.backgroundColor = "red";
     })
-}
-
-/* Checks if a mouse button is being pressed over the conteiner,
-   if thats true then execute the colorCell() function */
-function paint(cellNumber){
-    content.addEventListener("mousedown",() => colorCell(cellNumber));
 }
 
 //256 cells
