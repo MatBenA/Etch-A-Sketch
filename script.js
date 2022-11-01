@@ -72,9 +72,8 @@ gridSize.addEventListener("click", resizeGrid);
 
 //removes the all the grid cells and creates a new grid with the number of columns given
 function resizeGrid() {
-  limit = false;
-
-  do {
+  let limit = false;
+  do {  
     switch (limit) {
       case false:
         columns = prompt("Insert new grid size:");
@@ -84,9 +83,9 @@ function resizeGrid() {
         break;
     }
     limit = true;
-  } while (columns > 100);
+  } while (columns > 100);  //This while is to set a max limit to the input
   
-  columns = parseInt(columns);
+  columns = parseInt(columns); //transforms from string to integer
 
   clearGrid();
   removeGrid();
