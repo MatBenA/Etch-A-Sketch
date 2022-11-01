@@ -2,7 +2,7 @@ const container = document.querySelector(".container");
 const cells = []; //array that will contain all the cells
 let mouseDown = false;
 
-let columns = 30; //default number of columns
+let columns = 20; //default number of columns
 let cellNumber = columns ** 2; //number of cells = columns²
 
 //changes the number of columns in the grid
@@ -39,21 +39,21 @@ container.addEventListener("mouseup", () => (mouseDown = false));
 
 // adds event listener to every cell to paint them
 paintCells();
-function paintCells(){
-for (let i = 0; i < cellNumber; i++) {
-  //paints the cell if the mouse is over it and if a mouse button is being pressed
-  cells[i].addEventListener("mouseover", () => {
-    if (mouseDown) {
-      cells[i].style.backgroundColor = "purple";
-    }
-  });
+function paintCells() {
+  for (let i = 0; i < cellNumber; i++) {
+    //paints the cell if the mouse is over it and if a mouse button is being pressed
+    cells[i].addEventListener("mouseover", () => {
+      if (mouseDown) {
+        cells[i].style.backgroundColor = "purple";
+      }
+    });
 
-  //paints the cell when clicked
-  cells[i].addEventListener(
-    "click",
-    () => (cells[i].style.backgroundColor = "purple")
-  );
-}
+    //paints the cell when clicked
+    cells[i].addEventListener(
+      "click",
+      () => (cells[i].style.backgroundColor = "purple")
+    );
+  }
 }
 //sets the reset button and calls the function that clears the grid
 const resetBtn = document.querySelector(".reset-btn");
@@ -72,7 +72,20 @@ gridSize.addEventListener("click", resizeGrid);
 
 //removes the all the grid cells and creates a new grid with the number of columns given
 function resizeGrid() {
-  columns = prompt("Insert new grid size:");
+  limit = false;
+
+  do {
+    switch (limit) {
+      case false:
+        columns = prompt("Insert new grid size:");
+        break;
+      case true:
+        columns = prompt("ERROR: The limit is 100 \n Insert new grid size:");
+        break;
+    }
+    limit = true;
+  } while (columns > 100);
+  
   columns = parseInt(columns);
 
   clearGrid();
