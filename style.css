@@ -6,31 +6,19 @@ body {
   background-color: rgb(112, 0, 112);
 }
 
-.square {
-  margin: auto;
-  background-color: white;
-  border: 2px solid rgb(255, 2, 255);
-  margin-bottom: 30px;
-  position: relative;
-  max-width: 500px;
-  border-radius: 8px;
-}
-
 .container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  margin: auto;
+
+  border: 2px solid rgb(255, 2, 255);
+  max-width: 550px;
+  height: 550px;
+  border-radius: 8px;
   gap: 1px;
   background-color: rgb(206, 189, 209);
-
   display: grid;
 }
 
-:after {
-  content: "";
-  display: block;
-  padding-top: calc(100%);
-}
+
 
 button {
   background-color: rgb(80, 0, 80);
@@ -46,5 +34,3 @@ button {
   text-align: center;
 }
 
-.cell {
-}
