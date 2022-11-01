@@ -2,7 +2,7 @@ const container = document.querySelector(".container");
 const cells = []; //array that will contain all the cells
 let mouseDown = false;
 let columns = 60;
-let cellNumber = columns**2;
+let cellNumber = columns ** 2;
 
 container.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
 
@@ -22,12 +22,21 @@ container.addEventListener("mouseup", () => (mouseDown = false));
 for (let i = 0; i < cellNumber; i++) {
   cells[i].addEventListener("mouseover", () => {
     if (mouseDown) {
-      cells[i].style.backgroundColor = "red";
+      cells[i].style.backgroundColor = "purple";
     }
   });
-  
+
   cells[i].addEventListener(
     "click",
-    () => (cells[i].style.backgroundColor = "red")
+    () => (cells[i].style.backgroundColor = "purple")
   );
+}
+
+const resetBtn = document.querySelector(".reset-btn");
+resetBtn.addEventListener("click", resetFunc);
+
+function resetFunc(){
+  for (let i = 0; i < cellNumber; i++){
+    cells[i].style.backgroundColor = "transparent";
+  }
 }

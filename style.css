@@ -1,20 +1,20 @@
-
-
 body {
   /*Overall font, no margin*/
   margin: 0px;
   padding: 0px;
   font-family: "Roboto", sans-serif;
-  background-color: khaki;
+  background-color: rgb(112, 0, 112);
+  
 }
 
 .square {
   margin: auto;
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid rgb(255, 2, 255);
   margin-bottom: 30px;
   position: relative;
   max-width: 500px;
+  border-radius: 8px;
 }
 
 .container {
@@ -31,8 +31,17 @@ body {
   padding-top: calc(100%);
 }
 
-.cell {
-/*   width: 10px;
-  height: 10px; */
-  border: 1px solid black;
+button {
+  background-color:rgb(80, 0, 80);
+  color: rgb(255, 0, 255);
+  border-radius: 7px;
+  border-color:rgb(255, 0, 255);
+  border-style: solid;
+  border-width: 1px;
+  height: 25px;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
 }
