@@ -6,6 +6,13 @@ body {
   background-image: linear-gradient(rgb(112, 0, 112), rgb(36, 0, 36));
 }
 
+h1{
+  color: #ffb3ff;
+  text-align: center;
+  margin: 10px;
+  font-weight:900;
+}
+
 .container {
   margin: auto;
 
@@ -26,9 +33,9 @@ body {
 
 button {
   background-color: rgb(80, 0, 80);
-  color: rgb(255, 0, 255);
+  color: #ffb3ff;
   border-radius: 7px;
-  border: 2px solid rgb(255, 0, 255);
+  border: 2px solid #ffb3ff;
   font-size: 16px;
   height: 30px;
   margin: 8px 5px;
@@ -40,7 +47,6 @@ footer{
   display: flex;
   justify-content: center;
   text-align: center;
-  color: #ffb3ff;
 }
 
 a{
