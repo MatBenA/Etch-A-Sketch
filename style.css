@@ -3,7 +3,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Roboto", sans-serif;
-  background-color: rgb(112, 0, 112);
+  background-image: linear-gradient(rgb(112, 0, 112), rgb(36, 0, 36));
 }
 
 .container {
@@ -35,3 +35,19 @@ button {
   text-align: center;
 }
 
+footer{
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ffb3ff;
+}
+
+a{
+  color: #ffb3ff;
+  font-weight: 800;
+  font-size:18px;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+}
