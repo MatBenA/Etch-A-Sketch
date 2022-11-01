@@ -1,6 +1,4 @@
-:root{
-  --columnsNumber: 16;
-}
+
 
 body {
   /*Overall font, no margin*/
@@ -25,7 +23,6 @@ body {
   height: 100%;
 
   display: grid;
-  grid-template-columns: repeat(var(--columnsNumber), 1fr);
 }
 
 :after {
